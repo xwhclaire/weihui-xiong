@@ -3,23 +3,31 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
-language:
-timezone:
+# 网站的标题
+title: Weihui(Claire) XIONG
+# 网站的副标题
+subtitle: Homepage
+# 网站内容描述
+description: academic life of Weihui XIONG
+# 网站的作者
+author: Weihui(Claire) Xiong
+language: English
+timezone: BJT
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+# 网站地址
+url: https://xwhclaire.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
 # Directory
+# sourcedir就是perlog的source文件夹的内容，存放你的博客
 source_dir: source
+# 这个public文件夹是生成的，不要修改
 public_dir: public
+# 文章标签
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
@@ -63,9 +71,11 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: Claudia
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  message: add new post
+  repo: git@github.com:xwhclaire/xwhclaire.github.io.git,master
