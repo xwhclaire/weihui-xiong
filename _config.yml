@@ -3,31 +3,23 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-# 网站的标题
 title: Weihui(Claire) XIONG
-# 网站的副标题
 subtitle: Homepage
-# 网站内容描述
 description: academic life of Weihui XIONG
-# 网站的作者
 author: Weihui(Claire) Xiong
 language: English
-timezone: BJT
+timezone: 
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-# 网站地址
 url: https://xwhclaire.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
 # Directory
-# sourcedir就是perlog的source文件夹的内容，存放你的博客
 source_dir: source
-# 这个public文件夹是生成的，不要修改
 public_dir: public
-# 文章标签
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
@@ -50,7 +42,16 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
-
+  
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+  
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -77,5 +78,5 @@ theme: Claudia
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  message: add new post
-  repo: git@github.com:xwhclaire/xwhclaire.github.io.git,master
+  repo: git@github.com:xwhclaire/xwhclaire.github.io.git
+  branch: master
