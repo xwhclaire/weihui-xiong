@@ -2,7 +2,7 @@
 menu:
   Home: /
   My Works: /works
-  About: /about
+  About: /aboutme
   #Tags: /tags
 
 rss: /atom.xml
